@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.inpu {
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inpu:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    color: #355872;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: calc(100% - 140px);
+    padding: 12px 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: #355872;
+    box-shadow: 0 0 8px rgba(53, 88, 114, 0.3);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #355872;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2c4a60;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.list {
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    background: #f4f6f8;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+li button {
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+li button#done {
+    background-color: #4caf50;
+}
+
+li button#done:hover {
+    background-color: #3e8e41;
+}
+
+li button#Delete {
+    background-color: #e74c3c;
+}
+
+li button#Delete:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .inpu {
+        padding: 20px 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
